@@ -4,57 +4,59 @@ Statut : provisoire, fondé sur le cadrage du 2026-10-25. Les phases sont ordonn
 
 ## Phase 0 — Product Discovery (en cours)
 - [x] Confirmer la zone initiale : Côte d’Ivoire.
-- [x] Confirmer la couverture de plusieurs filières dès le départ.
+- [x] Confirmer la couverture de plusieurs filières dès le départ (cacao, café, anacarde, hévéa, palmier à huile, autres).
 - [x] Confirmer une stratégie MVP puis extensions.
-- [x] Identifier les quatre profils de départ : producteurs, collecteurs, agents de terrain, administrateurs.
+- [x] Identifier les trois profils de découverte : collecteurs, agents de terrain, administrateurs. 🔗 (le producteur est une entité métier, pas un profil utilisateur au lancement)
 - [x] Confirmer web + Flutter mobile.
 - [x] Confirmer saisie, consultation et modification de données déjà téléchargées hors ligne.
 - [x] Confirmer plusieurs organisations avec cloisonnement des données.
-- [x] Enregistrer l’ambition de volumétrie : environ 800 000 producteurs ou davantage.
-- [ ] Identifier le sponsor, les décideurs métier et les utilisateurs à interviewer.
-- [ ] Lister les filières, zones, langues et unités du lancement.
+- [x] Enregistrer l'ambition de volumétrie : environ 800 000 producteurs ou davantage (ordre de grandeur à valider en Phase 0, cf. principe 6).
+- [x] Lister les filières, zones, langues et unités du lancement.
 - [ ] Cartographier les processus réels de chaque domaine.
 - [ ] Définir la hiérarchie client/organisation/coopérative/campagne/zone.
-- [ ] Définir les opérations autorisées hors ligne et les règles de conflit.
+- [ ] Définir les opérations autorisées hors ligne et les règles de conflit par type de donnée.
 - [ ] Définir les données personnelles, finalités et durées de conservation.
 - [ ] Prioriser le MVP après comparaison de tous les domaines.
 - [ ] Définir les volumes détaillés, indicateurs de succès et critères de charge.
+- [ ] Nommer les validateurs métier (coopératives pilotes, experts filière) qui valideront les requirements en Phase 1.
 
 ## Phase 1 — Requirements
-- [ ] Transformer les besoins validés en exigences identifiées et traçables.
+- [ ] Transformer les besoins validés en exigences identifiées et traçables(matrice besoin → exigence → test).
 - [ ] Définir la matrice de rôles et autorisations, y compris les périmètres organisationnels.
 - [ ] Définir les scénarios hors ligne et les critères de synchronisation.
-- [ ] Définir les exigences non fonctionnelles mesurables.
-- [ ] Faire valider les requirements par les responsables métier.
+- [ ] Définir les exigences non fonctionnelles mesurables(charge, latence, disponibilité, restauration).
+- [ ] Faire valider les requirements par les responsables métier nommés en Phase 0.
 
 ## Phase 2 — Architecture et preuves de faisabilité
-- [ ] Comparer les options d’hébergement sans présumer du fournisseur.
+- [ ] Comparer les options d’hébergement sans présumer du fournisseur, sur critères explicites (coût, souveraineté, exploitation, scalabilité).
 - [ ] Comparer les options de base de données selon relations, transactions, géospatial, charge et exploitation.
-- [ ] Prototyper stockage local, synchronisation, idempotence et conflits.
+- [ ] Prototyper stockage local, synchronisation, idempotence et et résolution de conflits.
 - [ ] Prototyper le cloisonnement multi-organisation et tester les accès croisés.
-- [ ] Construire un modèle de charge pour producteurs, parcelles, événements, fichiers et utilisateurs simultanés.
+- [ ] Construire un modèle de charge pour producteurs, parcelles, fichiers et utilisateurs simultanés.
 - [ ] Documenter les décisions approuvées dans des ADR.
+- [ ] Gate technique : ne pas figer la stack avant que ces ADR soient approuvés.
 
 ## Phase 3 — Fondations produit
 - [ ] Dépôt, conventions, CI et contrôle de qualité.
 - [ ] Gestion des secrets, environnements et dépendances.
-- [ ] Authentification, autorisation et isolation multi-organisation selon les règles validées.
+- [ ] Authentification, autorisation et isolation multi-organisation selon les règles validées en Phase 1.
 - [ ] Contrats API, stratégie de versionnement et migrations.
-- [ ] Observabilité, sauvegardes et procédure de restauration.
-- [ ] Squelette web/mobile et persistance locale.
+- [ ] Observabilité, sauvegardes et procédure de restauration (testée, pas seulement documentée).
+- [ ] Squelette web/mobile et persistance locale (industrialise le prototype de Phase 2).
 
 ## Phase 4 — MVP vertical
-- [ ] Choisir le parcours MVP sur la base des résultats de Discovery.
-- [ ] Écrire requirement/spec/design/tasks pour ce parcours.
+- [ ] Choisir le parcours MVP sur la base des résultats de Discovery(déjà préparé en Phase 0).
+- [ ] Écrire requirement/spec/design/tasks pour ce parcours(chaîne SDD complète).
 - [ ] Livrer le parcours de bout en bout avec tests automatisés.
 - [ ] Tester les scénarios en ligne, hors ligne, de reprise et de conflits.
-- [ ] Faire valider le parcours par des utilisateurs représentatifs.
-- [ ] Mesurer les résultats par rapport aux critères d’acceptation.
+- [ ] Faire valider le parcours par des utilisateurs représentatifs(les 3 profils de découverte).
+- [ ] Mesurer les résultats par rapport aux critères d’acceptation(Phase 1).
 
 ## Phase 5 — Extension progressive
 - [ ] Ajouter les domaines et filières priorisés.
-- [ ] Tester la charge, la sécurité, la restauration et la qualité des données.
+- [ ] Tester la charge (valide le modèle de charge de Phase 2), la sécurité, la restauration et la qualité des données.
 - [ ] Préparer formation, support et exploitation.
+- [ ] Réexaminer les inconnues non bloquantes laissées ouvertes (cf. Gate de passage).
 
 ## Gate de passage
 Ne pas figer les choix techniques ni commencer l’implémentation métier à grande échelle avant d’avoir validé les exigences qui conditionnent ces choix. Les inconnues non bloquantes peuvent rester ouvertes, mais doivent avoir un responsable et une date de réexamen.

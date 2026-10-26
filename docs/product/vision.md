@@ -1,28 +1,27 @@
 # Vision produit — eFarmerManagement
 
-- Statut : vision de cadrage provisoire, fondée sur les réponses du porteur de projet
+- Statut : vision de cadrage provisoire, qui sera evolutif au fur et à mesure
 - Version : 0.2
 
 ## Vision
-Construire une plateforme de gestion agricole déployée d’abord en Côte d’Ivoire, couvrant plusieurs filières, accessible via le web et le mobile et conçue pour permettre le travail de terrain avec une connectivité intermittente. Le produit sera livré sous forme de MVP puis étendu, avec une ambition de capacité d’environ 800 000 producteurs ou davantage.
+Construire une plateforme de gestion agricole déployée d’abord en Côte d’Ivoire, couvrant plusieurs filières agro-industriel(cacao,café,l'anarcarde,l'hevea ,le palmier à huile et bien d'autres cultures), accessible via le web et le mobile et conçue pour permettre le travail de terrain avec une connectivité intermittente. Le produit sera livré sous forme de SAAS avec la possibilité si un client le veut de l'installer sur son propre environnement, avec une ambition de capacité d’environ 800 000 producteurs ou davantage dans la base de données.
 
 ## Publics retenus pour la découverte
-- Producteurs
-- Collecteurs
+- Collecteurs (agents de saisie dans les différentes coopératives)
 - Agents de terrain
 - Administrateurs
 
 Le fait de considérer ces profils au lancement ne définit pas encore leurs permissions ni ne signifie qu’ils réaliseront les mêmes tâches dans l’application.
 
 ## Périmètre à étudier avant de prioriser
-- Gestion des producteurs, exploitations et parcelles
-- Collecte
-- Traçabilité
-- Durabilité
+- Gestion des producteurs, de son ménages et de ses parcelles
+- Collecte des données sur le terrain
+- Traçabilité sous forme de blockchain de la production dans les parcelles jusqu'à la livraison aux exportateurs
+- Durabilité des questionnaires qui seront modulaires definis pas le client final (qui aura la main pour crée ses questions)
 - Administration, gestion et reporting
+- Gestion des flux financiers dans lapplication (avoir une une comptabilité,RH dans l'application)
 - Identité, permissions et cloisonnement multi-organisation
 
-Tous ces domaines doivent être étudiés ; le contenu du MVP reste à décider.
 
 ## Principes de conception proposés
 1. Définir explicitement les parcours hors ligne et les données disponibles localement.

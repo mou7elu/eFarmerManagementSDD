@@ -10,7 +10,7 @@
 | Q-001 | Pays de lancement | Côte d’Ivoire uniquement | Préciser ensuite les zones pilotes, langues et contraintes applicables |
 | Q-002 | Filières | Plusieurs filières dès le départ | Obtenir la liste exacte et distinguer les données communes des données propres à chaque filière |
 | Q-003 | Livraison | MVP puis extensions | Définir le MVP après étude comparative de tous les modules |
-| Q-004 | Profils de départ | Producteurs, collecteurs, administrateurs, agents de terrain ; tous considérés simultanément | Définir les responsabilités et permissions exactes |
+| Q-004 | Profils de départ | collecteurs, administrateurs, agents de terrain ; tous considérés simultanément | Définir les responsabilités et permissions exactes |
 | Q-005 | Hors ligne | Saisir, consulter et modifier les données déjà téléchargées | Définir le périmètre des données locales et les règles de conflit |
 | Q-006 | Organisations | Plusieurs clients/organisations avec cloisonnement | Définir le modèle hiérarchique et les tests d’isolation |
 | Q-007 | Hébergement | À comparer | Ne pas choisir de fournisseur avant les critères de comparaison |

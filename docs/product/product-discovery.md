@@ -3,10 +3,10 @@
 - Statut : **cadrage initial mis à jour ; validation métier encore nécessaire**
 - Version : 0.2
 - Date : 2026-10-25
-- Décideur produit / sponsor : à identifier
+- Décideur produit / sponsor : moi
 
 ## 1. Vision provisoire
-Construire une plateforme agricole pour la Côte d’Ivoire, accessible via le web et le mobile, couvrant plusieurs filières dès le départ et permettant aux acteurs autorisés de saisir, consulter et modifier hors ligne les données déjà téléchargées. Le produit vise une architecture capable d’évoluer vers environ 800 000 producteurs ou davantage. Le lancement doit se faire par un MVP, puis des extensions progressives.
+Construire une plateforme de gestion agricole pour la Côte d’Ivoire, accessible via le web et le mobile, couvrant plusieurs filières dès le départ et permettant aux acteurs autorisés de saisir, consulter et modifier hors ligne les données déjà téléchargées. Le produit vise une architecture capable d’évoluer vers environ 800 000 producteurs dans la base ou davantage. Le lancement doit se faire par un MVP, puis des extensions progressives.
 
 Cette vision résume les choix de cadrage fournis par le porteur du projet. Elle ne remplace pas les ateliers métier : les problèmes prioritaires, les workflows, les responsabilités, les mesures de succès et les critères d’acceptation restent à valider.
 
@@ -17,18 +17,18 @@ Cette vision résume les choix de cadrage fournis par le porteur du projet. Elle
 | D-001 | Zone de lancement | Côte d’Ivoire uniquement | Zones pilotes, langues et contraintes réglementaires à préciser |
 | D-002 | Filières | Plusieurs filières dès le départ | Liste des filières et particularités par filière à définir |
 | D-003 | Stratégie de livraison | MVP d’abord, puis extensions | Périmètre du MVP non encore priorisé |
-| D-004 | Utilisateurs de départ | Producteurs, collecteurs, administrateurs et agents de terrain ; tous les profils doivent être considérés dès le lancement | Sous-rôles, permissions et disponibilité réelle de chaque profil à préciser |
+| D-004 | Utilisateurs de départ |  collecteurs, administrateurs et agents de terrain ; tous les profils doivent être considérés dès le lancement | Sous-rôles, permissions et disponibilité réelle de chaque profil à préciser |
 | D-005 | Canaux | Web React et mobile Flutter visés | Répartition précise des fonctions entre web et mobile à définir |
 | D-006 | Mode hors ligne | Saisir, consulter et modifier les données déjà téléchargées sans connexion | Types de données, limites temporelles, conflits et règles de sécurité à définir |
 | D-007 | Organisations | Plusieurs clients/organisations avec cloisonnement des données | Hiérarchie entre client, organisation, coopérative, campagne et zone à définir |
 | D-008 | Hébergement | Décision reportée à une comparaison | Budget, résidence des données, exigences d’exploitation et options à comparer |
 | D-009 | Échelle | Environ 800 000 producteurs ou davantage | Volumes de parcelles, événements, fichiers, utilisateurs simultanés et pics inconnus |
 | D-010 | Équipe | Porteur du projet principalement, avec assistance IA | Disponibilité, expertise, budget, calendrier et recours éventuel à des prestataires à préciser |
-| D-011 | Modules du MVP | Tous les modules doivent être étudiés avant de prioriser | La présence de tous les domaines dans l’étude ne signifie pas qu’ils seront tous livrés dans le MVP |
-
+| D-011 | Modules du MVP,Priorisation MVP = livrable de sortie de Discovery | Tous les modules doivent être étudiés avant de prioriser | La présence de tous les domaines dans l’étude ne signifie pas qu’ils seront tous livrés dans le MVP |
+| D-012 | Données personnelles | Les données personnelles des producteurs (identité, contacts, localisation) seront traitées selon un régime de minimisation et de durées de conservation à définir | base légale, durées, droits des personnes à préciser. |
 ## 3. Portée métier candidate à étudier
 Les domaines suivants sont à examiner avant de décider du MVP :
-- gestion des producteurs, exploitations et parcelles ;
+- gestion des producteurs,  parcelles ;
 - collecte ;
 - traçabilité ;
 - durabilité ;
@@ -66,11 +66,11 @@ Les noms de modules sont des catégories de travail, pas encore des spécificati
 | HYP-004 | Les domaines collecte, traçabilité, durabilité et gestion sont tous nécessaires au produit cible | Inventaire des processus, fréquence et valeur métier | À confirmer |
 | HYP-005 | Le volume de 800 000 producteurs implique aussi de fortes volumétries de parcelles, événements et pièces jointes | Construire des scénarios de charge séparés par type de donnée | À mesurer |
 | HYP-006 | Le questionnaire existant sur les exploitants peut être réutilisé comme source de découverte | Revue champ par champ avec le métier et contrôle de minimisation des données | À confirmer |
+| HYP-007 | React est adapté au web pour ce produit | à valider en Phase 2 | À confirmer |
 
 ## 6. Questions de recherche et entretiens
 
-Interroger ou observer les quatre catégories de profils :
-- **Producteurs** : bénéfices attendus, consentement, langue, équipement, rôle direct ou indirect dans l’application.
+Interroger ou observer les 3 catégories de profils :
 - **Collecteurs** : déroulé réel de la collecte, mesures, unités, corrections, validations et justificatifs.
 - **Agents de terrain** : préparation des visites, formulaires, GPS, pièces jointes, partage d’appareil et synchronisation différée.
 - **Administrateurs** : création des organisations, gestion des accès, référentiels, audit, qualité des données, exports et support.
@@ -84,7 +84,7 @@ Les seuils de performance, disponibilité, synchronisation, récupération et ad
 
 ## 8. Livrables de sortie de Discovery
 - Parties prenantes, décideur produit et responsabilités identifiés.
-- Parcours métier observés pour les quatre profils.
+- Parcours métier observés pour les trois profils.
 - Liste des filières et processus cibles validée.
 - Cartographie des organisations et règles de cloisonnement validées.
 - Matrice des fonctions disponibles en ligne/hors ligne et sur chaque canal.
