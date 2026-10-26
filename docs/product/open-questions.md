@@ -7,7 +7,7 @@
 
 | ID | Sujet | Réponse | Conséquence |
 |---|---|---|---|
-| Q-001 | Pays de lancement | Côte d’Ivoire uniquement | Préciser ensuite les zones pilotes, langues et contraintes applicables |
+| Q-001 | Pays de lancement | Côte d’Ivoire uniquement | |
 | Q-002 | Filières | Plusieurs filières dès le départ | Obtenir la liste exacte et distinguer les données communes des données propres à chaque filière |
 | Q-003 | Livraison | MVP puis extensions | Définir le MVP après étude comparative de tous les modules |
 | Q-004 | Profils de départ | collecteurs, administrateurs, agents de terrain ; tous considérés simultanément | Définir les responsabilités et permissions exactes |

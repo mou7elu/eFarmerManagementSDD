@@ -1,12 +1,14 @@
-# Contribuer
+# CONTRIBUTING.md — Conventions de contribution
 
-1. Choisir un Requirement et une spec approuvés.
-2. Vérifier les dépendances et critères d'acceptation.
-3. Créer une branche courte avec un nom explicite, par exemple `feat/REQ-TRA-001-lot-history`.
-4. Implémenter une petite tranche verticale.
-5. Ajouter tests unitaires, d'intégration ou de parcours selon le risque.
-6. Exécuter formatage, lint, tests et contrôles de sécurité disponibles.
-7. Ouvrir une PR décrivant les IDs SDD couverts, les décisions prises, les tests exécutés et les limites connues.
-8. Mettre à jour les documents dans la même PR si le comportement change.
+- Version : 0.2
+- Date : 2026-10-26
+- Public : contributeurs humains et agents IA.
+- Documents de référence : `README.md` (v0.2), `AGENTS.md` (v0.2),
+  `docs/product/vision.md` (v0.2), `docs/product/roadmap.md` (v0.2).
 
-Ne pas intégrer une règle métier supposée sans validation. Les migrations de données et changements de contrat API doivent avoir une stratégie de compatibilité et de retour arrière documentée.
+## 1. Principe général
+
+Le dépôt suit une démarche **Spec-Driven Development (SDD)** :
+
+```text
+Requirement → Specification → Design → Tasks → Implement → Test → Review/update docs
